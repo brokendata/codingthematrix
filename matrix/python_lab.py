@@ -140,22 +140,22 @@ value_list = [d[k] for d in dlist]
 dlist = [{'Bilbo':'Ian','Frodo':'Elijah'},{'Bilbo':'Martin','Thorin':'Richard'}]
 k = 'Bilbo'
 #Replace [...] with a one-line comprehension 
-value_list_modified_1 = [...] # <-- Use the same expression here
+value_list_modified_1 = [d[k] if k in d else 'NOT PRESENT' for d in dlist] # <-- Use the same expression here
 k = 'Frodo'
-value_list_modified_2 = [...] # <-- as you do here
+value_list_modified_2 = [d[k] if k in d else 'NOT PRESENT' for d in dlist] # <-- as you do here
 
 
 
 ## 22: (Task 22) A dictionary mapping integers to their squares
 # Replace {...} with a one-line dictionary comprehension
-square_dict = {...}
+square_dict = {x:x**2 for x in range(100)}
 
 
 
 ## 23: (Task 23) Making the identity function
 D = {'red','white','blue'}
 # Replace {...} with a one-line dictionary comprehension
-identity_dict = {...}
+identity_dict = {k:k for k in D}
 
 
 
