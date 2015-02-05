@@ -165,7 +165,7 @@ digits = set(range(base))
 # Replace { ... } with a one-line dictionary comprehension
 # Your comprehension should use the variables 'base' and 'digits' so it will work correctly if these
 # are assigned different values (e.g. base = 2 and digits = {0,1})
-representation_dict = { ... }
+representation_dict = {(x,y,z):n for x in digits for y in digits for z in digits for n in range(20) if ((x*10**2) + (y*10**1) +(z*10**0)) == n}
 
 
 
