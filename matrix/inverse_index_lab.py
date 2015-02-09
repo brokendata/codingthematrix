@@ -58,7 +58,7 @@ def orSearch(inverseIndex, query):
 
 ## 4: (Task 4) And Search
 def andSearch(inverseIndex, query):
-     """
+    """
     Input: an inverse index, as created by makeInverseIndex, and a list of words to query
     Output: the set of all document ids that contain _all_ of the specified words
     Feel free to use a loop instead of a comprehension.
