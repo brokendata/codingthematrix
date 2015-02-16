@@ -192,7 +192,7 @@ def transform(a, b, L):
     >>> transform(3,2,[1,2,3])
     [5, 8, 11]
     '''
-    pass
+    return [(a*x) +b for x in L]
 
 
 
